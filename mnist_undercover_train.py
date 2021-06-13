@@ -85,8 +85,8 @@ def test():
     net = MnistModel()
     net = net.to(device)
     criterion = nn.CrossEntropyLoss()
-    checkpoint = torch.load(MNIST_CKPT)
-    net.load_state_dict(checkpoint['net'])
+    #checkpoint = torch.load(MNIST_CKPT)
+    #net.load_state_dict(checkpoint['net'])
 
     net.eval()
     test_loss = 0
