@@ -110,5 +110,5 @@ if __name__ == '__main__':
     MNIST_CKPT = './checkpoint/mnist_undercover.pth'
     device = 'cuda:1' if torch.cuda.is_available() else 'cpu'
 
-    # train(50)
+    train(50)
     test()
